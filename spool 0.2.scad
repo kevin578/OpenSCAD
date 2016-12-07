@@ -1,7 +1,5 @@
 
 
-
-
 difference(){
 cube([52, 34, 5]);
 
