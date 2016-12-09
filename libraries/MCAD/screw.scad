@@ -17,6 +17,7 @@ inner_diameter: thickness of the shaft
 //test_ball_groove2();
 //test_ball_screw();
 
+helix();
 module helix(pitch, length, slices=500){
     rotations = length/pitch;
     linear_extrude(height=length, center=false, convexity=10, twist=360*rotations, slices=slices, $fn=100)
