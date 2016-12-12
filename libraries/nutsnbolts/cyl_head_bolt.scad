@@ -25,8 +25,6 @@ include <data-metric_cyl_head_bolts.scad>; // database
 // -- through hole for screws --
 // -----------------------------
 
-
-
 module hole_through(
 
 	name = "M3",  // name of screw family (i.e. M4, M5, etc)
@@ -139,6 +137,7 @@ module nutcatch_sidecut(
 // default is not modelling the thread (for the small screws there is not real use
 // to model them)
 // Beware that for a diameter only certain screw lengths do actually exist!
+
 module screw(
 
 	name   = "M5x20",  // name of screw (i.e. M3x12, M4x25, ...)
