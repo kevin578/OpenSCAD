@@ -6,7 +6,7 @@ spool_height = 80;
 
 
 
-//spool_bottom();
+spool_bottom();
 
 module spool_bottom() {
 //curve
@@ -53,10 +53,12 @@ cube([38, 12, 40]);
 difference(){
 cube([50, 60, 5]);
 
-translate(v = [0, 4, 0]){
+translate(v = [-2.1, 4, 0]){
+
+
 union(){
-translate(v = [11, 1, -1]){
-}
+
+
 translate(v = [16.1, 3, 10]) {
 screw("M3x10", render_thread);
 }

@@ -1,11 +1,20 @@
 include <spool_bottom.scad>
-
+include <top_hole.scad>
 difference(){
 
+cube([50,20,80]);
 
-cube([50,20,60]);
-    
+
+union(){    
 translate(v = [0,-40,-70]){
-spool_bottom();
+top_hole(.8);
+}
+
+
+translate(v = [25,25,60]){
+rotate(a = [90,0,0]){
+cylinder (d = 28, h = 30);
+}
+}
 }
 }
